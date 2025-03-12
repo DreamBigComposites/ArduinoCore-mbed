@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright (c) 2018-2019, Arm Limited and affiliates.
  * SPDX-License-Identifier: Apache-2.0
@@ -239,3 +240,4 @@ protected:
 }
 
 #endif
+#include "platform/disable-warnings-end.h"

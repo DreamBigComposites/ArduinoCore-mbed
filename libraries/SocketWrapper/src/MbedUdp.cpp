@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 #include "MbedUdp.h"
 
 arduino::MbedUDP::MbedUDP() {
@@ -215,3 +216,4 @@ int arduino::MbedUDP::peek() {
 
   return _current_packet[0];
 }
+#include "platform/disable-warnings-end.h"

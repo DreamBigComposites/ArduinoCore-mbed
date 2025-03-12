@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
   SPI.cpp - wrapper over mbed SPI class
   Part of Arduino - http://www.arduino.cc/
@@ -123,3 +124,4 @@ arduino::MbedSPI SPI1(SPI_MISO1, SPI_MOSI1, SPI_SCK1);
 #endif
 
 #endif
+#include "platform/disable-warnings-end.h"

@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
   Serial.cpp - wrapper over mbed RawSerial
   Part of Arduino - http://www.arduino.cc/
@@ -340,3 +341,4 @@ UART _UART4_(SERIAL4_TX, SERIAL4_RX, NC, NC);
 #endif
 #endif
 #endif
+#include "platform/disable-warnings-end.h"

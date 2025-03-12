@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * PackageLicenseDeclared: Apache-2.0
  * Copyright (c) 2017 ARM Limited
@@ -175,3 +176,4 @@ private:
 };
 
 #endif // _HTTP_RESPONSE_PARSER_H_
+#include "platform/disable-warnings-end.h"

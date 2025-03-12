@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 #include "WiFi.h"
 
 #define SSID_MAX_LENGTH 32
@@ -398,3 +399,4 @@ arduino::WiFiClass WiFi(WiFiInterface::get_default_instance());
 //
 // static ESP8266Interface wifi_if(PD_8, PD_9);
 // arduino::WiFiClass WiFi(&wifi_if);
+#include "platform/disable-warnings-end.h"

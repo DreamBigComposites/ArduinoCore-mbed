@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /**
   ******************************************************************************
   * @file    rsc_table.c
@@ -76,3 +77,4 @@ void resource_table_init(int RPMsgRole, void **table_ptr, int *length) {
     *length = SHM_RSC_SIZE;
     *table_ptr = resource_table;
 }
+#include "platform/disable-warnings-end.h"

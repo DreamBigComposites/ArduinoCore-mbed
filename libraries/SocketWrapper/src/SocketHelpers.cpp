@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 #include "SocketHelpers.h"
 #include <ICMPSocket.h>
 
@@ -75,6 +76,9 @@ arduino::IPAddress arduino::MbedSocketClass::dnsIP(int n) {
   return ipAddressFromSocketAddress(ip);
 }
 
+// https://github.com/arduino/ArduinoCore-mbed/issues/1033
+
+#if MBED_CONF_LWIP_RAW_SOCKET_ENABLED
 int arduino::MbedSocketClass::ping(const char *hostname, uint8_t ttl)
 {
   SocketAddress socketAddress;
@@ -92,6 +96,7 @@ int arduino::MbedSocketClass::ping(IPAddress host, uint8_t ttl)
   SocketAddress socketAddress = socketAddressFromIpAddress(host, 0);
   return ping(socketAddress, ttl);
 }
+#endif
 
 void arduino::MbedSocketClass::config(arduino::IPAddress local_ip) {
   IPAddress dns = local_ip;
@@ -138,6 +143,8 @@ void arduino::MbedSocketClass::setDNS(IPAddress dns_server1, IPAddress dns_serve
   _dnsServer2 = SocketAddress(convertedDNSServer2);
 }
 
+// https://github.com/arduino/ArduinoCore-mbed/issues/1033
+#if MBED_CONF_LWIP_RAW_SOCKET_ENABLED
 int arduino::MbedSocketClass::ping(SocketAddress &socketAddress, uint8_t ttl, uint32_t timeout)
 {
   /* ttl is not supported by mbed ICMPSocket. Default value used is 255 */
@@ -150,6 +157,7 @@ int arduino::MbedSocketClass::ping(SocketAddress &socketAddress, uint8_t ttl, ui
 
   return response;
 }
+#endif
 
 arduino::IPAddress arduino::MbedSocketClass::ipAddressFromSocketAddress(SocketAddress socketAddress) {
   nsapi_addr_t address = socketAddress.get_addr();
@@ -250,3 +258,4 @@ exit:
 
   return res;
 }
+#include "platform/disable-warnings-end.h"

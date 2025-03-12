@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright © 2017 Embedded Artistry LLC.
  * License: MIT. See LICENSE file for details.
@@ -166,3 +167,4 @@ void malloc_addblock(void* addr, size_t size)
 	// and now our giant block of memory is added to the list!
 	list_add(&blk->node, &free_list);
 }
+#include "platform/disable-warnings-end.h"

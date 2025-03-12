@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright (c) 2016, Xilinx Inc. and Contributors. All rights reserved.
  *
@@ -75,3 +76,4 @@ void *metal_machine_io_mem_map(void *va, metal_phys_addr_t pa,
 
 	return va;
 }
+#include "platform/disable-warnings-end.h"

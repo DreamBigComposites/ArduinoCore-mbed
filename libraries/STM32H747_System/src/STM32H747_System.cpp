@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 #include "STM32H747_System.h"
 #include "Wire.h"
 
@@ -116,3 +117,4 @@ bool STM32H747::useInternalOscillator(bool lowspeed) {
 
   return true;
 }
+#include "platform/disable-warnings-end.h"

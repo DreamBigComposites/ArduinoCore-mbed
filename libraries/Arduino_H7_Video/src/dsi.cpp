@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /**
   ******************************************************************************
   * @file    dsi.cpp
@@ -413,3 +414,4 @@ extern "C" void HAL_LTDC_ReloadEventCallback(LTDC_HandleTypeDef *hltdc) {
 }
 
 /**** END OF FILE ****/
+#include "platform/disable-warnings-end.h"

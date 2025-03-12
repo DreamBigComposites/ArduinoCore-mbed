@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 #include "SDRAM.h"
 extern "C" {
 	#include "ram_internal.h"
@@ -115,3 +116,4 @@ bool __attribute__((optimize("O0"))) SDRAMClass::test(bool fast, Stream& _serial
 }
 
 SDRAMClass SDRAM;
+#include "platform/disable-warnings-end.h"

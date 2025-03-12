@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 #include "H7DisplayShield.h"
 
 #include "Arduino.h"
@@ -59,3 +60,4 @@ int USBCVideoClass::getEdidMode(int h, int v) {
 
 GigaDisplayShieldClass GigaDisplayShield;
 USBCVideoClass USBCVideo;
+#include "platform/disable-warnings-end.h"

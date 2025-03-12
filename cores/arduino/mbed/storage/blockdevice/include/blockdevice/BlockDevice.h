@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /* mbed Microcontroller Library
  * Copyright (c) 2017 ARM Limited
  * SPDX-License-Identifier: Apache-2.0
@@ -256,3 +257,4 @@ using mbed::BD_ERROR_DEVICE_ERROR;
 #endif
 
 /** @}*/
+#include "platform/disable-warnings-end.h"

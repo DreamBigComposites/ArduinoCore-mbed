@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright (c) 2018-2019, Arm Limited and affiliates.
  * SPDX-License-Identifier: Apache-2.0
@@ -618,3 +619,4 @@ const uint8_t *USBCDC::configuration_desc(uint8_t index)
 }
 
 #endif
+#include "platform/disable-warnings-end.h"

@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright (c) 2022 Wind River Systems, Inc.
  *
@@ -389,3 +390,4 @@ static int virtio_mmio_create_virtqueues(struct virtio_device *vdev, unsigned in
 
 	return 0;
 }
+#include "platform/disable-warnings-end.h"

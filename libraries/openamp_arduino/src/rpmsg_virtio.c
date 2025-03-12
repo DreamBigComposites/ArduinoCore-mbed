@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright (c) 2014, Mentor Graphics Corporation
  * All rights reserved.
@@ -870,3 +871,4 @@ void rpmsg_deinit_vdev(struct rpmsg_virtio_device *rvdev)
 		metal_mutex_deinit(&rdev->lock);
 	}
 }
+#include "platform/disable-warnings-end.h"

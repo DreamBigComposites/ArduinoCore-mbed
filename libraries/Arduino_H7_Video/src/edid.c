@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright 2013 Google Inc.
  * Copyright 2006-2012 Red Hat, Inc.
@@ -1723,3 +1724,4 @@ void edid_set_framebuffer_bits_per_pixel(struct edid *edid, int fb_bpp,
 	edid->x_resolution = edid->bytes_per_line / (fb_bpp / 8);
 	edid->y_resolution = edid->mode.va;
 }
+#include "platform/disable-warnings-end.h"

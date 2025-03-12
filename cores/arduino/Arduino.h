@@ -1,3 +1,5 @@
+#include "platform/disable-warnings-start.h"
+
 /*
   Arduino.h - Main include file for the Arduino SDK
   Copyright (c) 2005-2013 Arduino Team.  All right reserved.
@@ -131,3 +133,4 @@ extern ErrorSerialClass ErrorSerial;
 #include "macros.h"
 
 #endif
+#include "platform/disable-warnings-end.h"

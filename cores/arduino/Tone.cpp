@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 #include "Arduino.h"
 #include "pinDefinitions.h"
 #include "mbed.h"
@@ -63,3 +64,4 @@ void noTone(uint8_t pin) {
 		active_tone = NULL;
 	}
 };
+#include "platform/disable-warnings-end.h"

@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /* Based on src/http/ngx_http_parse.c from NGINX copyright Igor Sysoev
  *
  * Additional changes are licensed under the same terms as NGINX and
@@ -2468,3 +2469,4 @@ http_parser_version(void) {
          HTTP_PARSER_VERSION_MINOR * 0x00100 |
          HTTP_PARSER_VERSION_PATCH * 0x00001;
 }
+#include "platform/disable-warnings-end.h"

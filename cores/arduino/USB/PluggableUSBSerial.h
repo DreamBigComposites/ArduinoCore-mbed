@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /*
  * Copyright (c) 2018-2019, Arm Limited and affiliates.
  * SPDX-License-Identifier: Apache-2.0
@@ -336,3 +337,4 @@ private:
 extern arduino::USBSerial _SerialUSB;
 
 #endif
+#include "platform/disable-warnings-end.h"

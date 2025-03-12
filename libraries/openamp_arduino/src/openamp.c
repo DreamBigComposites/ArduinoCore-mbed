@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /**
   ******************************************************************************
   * @file   openamp.c
@@ -182,3 +183,4 @@ int OPENAMP_Wait_EndPointready(struct rpmsg_endpoint *rp_ept, size_t deadline)
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+#include "platform/disable-warnings-end.h"

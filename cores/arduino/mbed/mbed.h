@@ -1,3 +1,4 @@
+#include "platform/disable-warnings-start.h"
 /* mbed Microcontroller Library
  * Copyright (c) 2006-2013 ARM Limited
  * SPDX-License-Identifier: Apache-2.0
@@ -118,3 +119,4 @@ using namespace std;
 #endif
 
 #endif
+#include "platform/disable-warnings-end.h"

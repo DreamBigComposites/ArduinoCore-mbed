@@ -118,9 +118,12 @@ public:
    *
    * return: RTT in milliseconds or -1 on error
    */
+// https://github.com/arduino/ArduinoCore-mbed/issues/1033
+#if MBED_CONF_LWIP_RAW_SOCKET_ENABLED
   int ping(const char* hostname, uint8_t ttl = 255);
   int ping(const String &hostname, uint8_t ttl = 255);
   int ping(IPAddress host, uint8_t ttl = 255);
+#endif
 
   /*
    * Download a file from an HTTP endpoint and save it in the provided `target` location on the fs

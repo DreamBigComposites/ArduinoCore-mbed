@@ -1,4 +1,4 @@
-
+#include "platform/disable-warnings-start.h"
 /* NetworkStack
  * Copyright (c) 2015 ARM Limited
  * SPDX-License-Identifier: Apache-2.0
@@ -565,3 +565,4 @@ NetworkStack *nsapi_create_stack(IF *iface)
 #endif
 
 /** @} */
+#include "platform/disable-warnings-end.h"

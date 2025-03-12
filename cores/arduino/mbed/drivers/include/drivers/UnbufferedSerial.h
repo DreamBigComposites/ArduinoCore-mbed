@@ -1,3 +1,5 @@
+#include "platform/disable-warnings-start.h"
+
 /* mbed Microcontroller Library
  * Copyright (c) 2019 ARM Limited
  * SPDX-License-Identifier: Apache-2.0
@@ -218,3 +220,4 @@ public:
 #endif // DEVICE_SERIAL || defined(DOXYGEN_ONLY)
 
 #endif // MBED_UNBUFFERED_SERIAL_H
+#include "platform/disable-warnings-end.h"
