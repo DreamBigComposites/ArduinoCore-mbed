@@ -3,3 +3,4 @@ cores/arduino/api*
 **/.vscode/
 **/.development
 .DS_Store
+libraries/SFU/extra/mbed-os/
