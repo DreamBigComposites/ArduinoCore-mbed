@@ -334,6 +334,9 @@ private:
     // Detect 4-byte addressing mode and enable it if supported
     int _sfdp_detect_and_enable_4byte_addressing(uint8_t *basic_param_table_ptr, int basic_param_table_size);
 
+    public:
+    auto unique_device_status() { return _unique_device_status; }
+
 private:
     enum qspif_clear_protection_method_t {
         QSPIF_BP_ULBPR,    // Issue global protection unlock instruction

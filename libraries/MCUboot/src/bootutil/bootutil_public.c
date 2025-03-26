@@ -1,3 +1,5 @@
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
 /*
  * SPDX-License-Identifier: Apache-2.0
  *
@@ -657,3 +659,4 @@ boot_set_confirmed(void)
 {
     return boot_set_confirmed_multi(0);
 }
+#pragma GCC diagnostic pop

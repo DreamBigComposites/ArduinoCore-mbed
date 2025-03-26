@@ -48,6 +48,7 @@
 /*
  * LOG level: 0 OFF, 1 ERROR, 2 WARNING, 3 DEBUG, 4 INFO
  */
+#undef MCUBOOT_LOG_LEVEL
 #define MCUBOOT_LOG_LEVEL 4
 
 /*

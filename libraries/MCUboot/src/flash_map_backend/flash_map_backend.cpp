@@ -1,3 +1,5 @@
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
 /*
  * Copyright (c) 2020 Embedded Planet
  * Copyright (c) 2020 ARM Limited
@@ -242,3 +244,4 @@ int flash_area_id_to_multi_image_slot(int image_index, int area_id)
     assert(image_index == 0);
     return area_id;
 }
+#pragma GCC diagnostic pop

@@ -1,3 +1,6 @@
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wformat"
 /*
   Copyright (c) 2022 Arduino SA.  All right reserved.
 
@@ -27,6 +30,7 @@
 #endif
 
 #include "mbed_trace.h"
+#undef TRACE_GROUP
 #define TRACE_GROUP "FILEBD"
 
 namespace mbed {
@@ -218,3 +222,4 @@ const char *FileBlockDevice::get_type() const
 }
 
 } // namespace mbed
+#pragma GCC diagnostic pop
